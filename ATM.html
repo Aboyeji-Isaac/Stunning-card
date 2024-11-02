@@ -19,10 +19,12 @@
             height: 224px;
             margin-left: 200px;
             align-items: center;
-            background-image: linear-gradient(120deg,  #add8e6, #3790b3 );
+            /* background-image: linear-gradient(120deg,  #add8e6, #3790b3 ); */
+            backdrop-filter: blur(2px);
+            border: 1px solid #c9c5ce;
             justify-content: center;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
             font-family: 'Courier New', Courier, monospace;
         }
 
@@ -38,7 +40,7 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .brand{
+        /* .brand{
             color: #070783;
             padding: 5px;
             border-radius: 5px;
@@ -50,6 +52,10 @@
             float: right;
             margin-top: -20px;
             box-sizing: border-box;
+        } */
+
+        .brand{
+            background-image: url(mastercard-2.svg);
         }
 
         .brand span{
@@ -62,7 +68,7 @@
             box-sizing: border-box;
         }
 
-        .emv-chip{
+        /* .emv-chip{
             top: 3rem;
             width: 50px;
             height: 40px;
@@ -72,17 +78,21 @@
             background-image: linear-gradient(45deg, #666 50% transparent 50%);
             padding: 0 12px;
             box-sizing: border-box;
+        } */
+
+        img{
+            transform: rotate(90deg);
+            width: 50px;
         }
 
-        .emv-chip::after{
+        /* .emv-chip::after{
             content: "";
             width: 10px;
             height: 10px;
             background-color: #666;
-            /* border-radius: 50%; */
             position: absolute;
 
-        }
+        } */
 
         .card-name,
         .card-number,
@@ -121,9 +131,12 @@
                 ATM
              </div>
              <div class="brand">
-                <span>v</span>erve
+                <!-- <span>v</span>erve -->
+                 
              </div>
-             <div class="emv-chip"></div>
+             <div class="emv-chip">
+                <img src="chip.png" alt="">
+             </div>
              <div class="card-number">**** **** **** 1234</div>
              <div class="card-expiry">02/25</div>
              <div class="card-name">
